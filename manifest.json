@@ -1,0 +1,15 @@
+{
+  "description": "Demonstrating webRequests",
+  "manifest_version": 3,
+  "name": "webRequest-demo",
+  "version": "1.0",
+
+  "permissions": ["webRequest", "webRequestBlocking"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": ["https://www.google.com/*"],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
